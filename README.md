@@ -1,4 +1,4 @@
-# waraishini
+# 「笑い死に」のフロントエンド専用リポジトリです。
 
 ## Project setup
 ```
