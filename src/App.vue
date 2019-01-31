@@ -1,38 +1,21 @@
 <template>
-  <v-app>
-    <v-toolbar app>
-      <v-toolbar-title class="headline text-uppercase">
-        <span>Vuetify</span>
-        <span class="font-weight-light">MATERIAL DESIGN</span>
-      </v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-btn
-        flat
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-      >
-        <span class="mr-2">Latest Release</span>
-      </v-btn>
-    </v-toolbar>
-
-    <v-content>
-      <HelloWorld/>
-    </v-content>
-  </v-app>
+  <header-nav-bar></header-nav-bar>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import { HeaderNavBarComponent } from './components/header-nav-bar/header-nav-bar.ts';
+import Vue from 'vue';
 
 export default {
   name: 'App',
+  // コンポーネント登録
   components: {
-    HelloWorld
+    'header-nav-bar': HeaderNavBarComponent,
   },
-  data () {
+  data() {
     return {
-      //
-    }
-  }
-}
+      // Propsとか登録ここにするの？めっちゃ凡長にならん？
+    };
+  },
+};
 </script>
