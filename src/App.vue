@@ -1,11 +1,11 @@
 <template>
 <div id="app">
-  <header-nav-bar></header-nav-bar>
+    <header-nav-bar></header-nav-bar>
 </div>
 </template>
 
-<script>
-import HeaderNavBarComponent from './components/header-nav-bar/header-nav-bar.vue';
+<script lang="ts">
+import HeaderNavBarComponent from './components/header-nav-bar/header-nav-bar';
 import Vue from 'vue';
 
 export default {

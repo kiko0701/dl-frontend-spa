@@ -2,6 +2,9 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 import { HeaderMenu } from './header.interface';
 
 
+/**
+ * ヘッダーナビゲーションバーコンポーネント
+ */
 @Component
 export default class HeaderNavBarComponent extends Vue {
 
