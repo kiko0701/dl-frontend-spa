@@ -1,6 +1,10 @@
 <template>
   <div>
-    <v-toolbar dark tabs>
+    <v-toolbar 
+    dark 
+    tabs
+    color="#212121"
+    >
       <v-toolbar-side-icon></v-toolbar-side-icon>
       <v-toolbar-title>{{title}}</v-toolbar-title>
       <v-spacer></v-spacer>
@@ -13,25 +17,27 @@
         <v-icon>more_vert</v-icon>
       </v-btn>
 
-      <v-tabs 
-      slot="extension" 
+      <v-tabs
+      class="tab-bar-container"
+      slot="extension"
       centered 
+      dark
       slider-color="yellow" 
-      icons-and-text
+      grow
       >
         <v-tab href="#tab-1">
           Recents
-          <v-icon>phone</v-icon>
+          <v-icon class="v-icon-config">phone</v-icon>
         </v-tab>
 
         <v-tab href="#tab-2">
           Favorites
-          <v-icon>favorite</v-icon>
+          <v-icon class="v-icon-config">favorite</v-icon>
         </v-tab>
 
         <v-tab href="#tab-3">
           Nearby
-          <v-icon>account_box</v-icon>
+          <v-icon class="v-icon-config">account_box</v-icon>
         </v-tab>
 
         <v-tab-item v-for="i in 3" :value="'tab-' + i" :key="i"></v-tab-item>
