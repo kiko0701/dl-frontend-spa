@@ -1,9 +1,11 @@
 <template>
+<div id="app">
   <header-nav-bar></header-nav-bar>
+</div>
 </template>
 
 <script>
-import { HeaderNavBarComponent } from './components/header-nav-bar/header-nav-bar.ts';
+import HeaderNavBarComponent from './components/header-nav-bar/header-nav-bar.vue';
 import Vue from 'vue';
 
 export default {
@@ -14,7 +16,6 @@ export default {
   },
   data() {
     return {
-      // Propsとか登録ここにするの？めっちゃ凡長にならん？
     };
   },
 };
