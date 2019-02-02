@@ -26,18 +26,18 @@
       grow
       >
         <v-tab href="#tab-1">
-          Recents
-          <v-icon class="v-icon-config">phone</v-icon>
+          笑わす
+          <v-icon class="v-icon-config">star</v-icon>
         </v-tab>
 
         <v-tab href="#tab-2">
-          Favorites
-          <v-icon class="v-icon-config">favorite</v-icon>
+          笑う
+          <v-icon class="v-icon-config">sentiment_very_satisfied</v-icon>
         </v-tab>
 
         <v-tab href="#tab-3">
-          Nearby
-          <v-icon class="v-icon-config">account_box</v-icon>
+          ランキング
+          <v-icon class="v-icon-config">favorite</v-icon>
         </v-tab>
 
         <v-tab-item v-for="i in 3" :value="'tab-' + i" :key="i"></v-tab-item>
