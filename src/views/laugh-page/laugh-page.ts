@@ -27,10 +27,47 @@ export default class LaughPageComponent extends Vue {
   private created() {
     // tslint:disable-next-line:no-console
     console.log('created');
-    this.themeItems.push({
-      id: 1,
-      image_url: 'https://cdn.vuetifyjs.com/images/cards/desert.jpg',
-      first_comment: 'こんばんは',
-    });
+    this.themeItems.push(
+      {
+        id: 1,
+        imageUrl: 'https://cdn.vuetifyjs.com/images/cards/desert.jpg',
+        firstComment: 'こんばんは',
+      },
+      {
+        id: 2,
+        imageUrl: 'https://cdn.vuetifyjs.com/images/cards/desert.jpg',
+        firstComment: 'おはよう',
+      },
+      {
+        id: 3,
+        imageUrl: 'https://cdn.vuetifyjs.com/images/cards/desert.jpg',
+        firstComment: 'やったあああ',
+      },
+      {
+        id: 4,
+        imageUrl: 'https://cdn.vuetifyjs.com/images/cards/desert.jpg',
+        firstComment: 'こんばんは',
+      },
+      {
+        id: 5,
+        imageUrl: 'https://cdn.vuetifyjs.com/images/cards/desert.jpg',
+        firstComment: 'おはよう',
+      },
+      {
+        id: 6,
+        imageUrl: 'https://cdn.vuetifyjs.com/images/cards/desert.jpg',
+        firstComment: 'やったあああ',
+      },
+      {
+        id: 7,
+        imageUrl: 'https://cdn.vuetifyjs.com/images/cards/desert.jpg',
+        firstComment: 'こんばんは',
+      },
+      {
+        id: 8,
+        imageUrl: 'https://cdn.vuetifyjs.com/images/cards/desert.jpg',
+        firstComment: 'おはよう',
+      },
+    );
   }
 }

@@ -6,8 +6,8 @@ export interface ThemeItem {
     id?: number;
 
     /** お題の画像 */
-    image_url?: string;
+    imageUrl?: string;
 
     /** お題の一言 */
-    first_comment?: string;
+    firstComment?: string;
 }

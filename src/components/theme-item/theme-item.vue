@@ -1,25 +1,19 @@
 <template>
-  <v-layout>
-    <v-flex xs12 sm6 offset-sm3>
-      <v-card>
-        <v-img
-          :src="themeItem.image_url"
-          aspect-ratio="2.75"
-        ></v-img>
-
-        <v-card-title primary-title>
-          <div>
-            <h3 class="headline mb-0">{{themeItem && themeItem.first_comment}}</h3>
-          </div>
-        </v-card-title>
-
-        <v-card-actions>  
-          <v-btn flat color="orange">Share</v-btn>
-          <v-btn flat color="orange">Explore</v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-flex>
-  </v-layout>
+  <v-card width="350px">
+    <v-img
+    :src="themeItem.imageUrl"
+    height="200px"
+    ></v-img>
+    <v-card-title primary-title>
+      <div>
+        <h3 class="headline mb-0">{{themeItem && themeItem.firstComment}}</h3>
+      </div>
+    </v-card-title>
+    <v-card-actions>  
+      <v-btn flat color="orange">Share</v-btn>
+      <v-btn flat color="orange">Explore</v-btn>
+    </v-card-actions>
+  </v-card>
 </template>
 <!--file import-->
 <style lang="scss" scoped src="./theme-item.scss"></style>
