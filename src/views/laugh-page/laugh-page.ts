@@ -26,17 +26,13 @@ export default class LaughPageComponent extends Vue {
    * インスタンス生成時に、お題リストを取得＆更新する
    */
   private mounted() {
-    // tslint:disable-next-line:no-console
-    console.log('created');
     axios
     .get<ThemeItem[]>('http://www.mocky.io/v2/5c5713f64d000041100fd01c')
     .then((response) => {
+      // 取得したお題をお題コレクションに格納
       this.themeItems = response.data || [];
     })
-    .catch(
-      (error) => {
-        console.log(error);
-      },
-    );
+    // エラー処理
+    .catch();
   }
 }
