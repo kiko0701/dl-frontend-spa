@@ -1,6 +1,7 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import { ThemeItem } from '@/components/theme-item/theme-item.interface';
 import ThemeItemComponent from '@/components/theme-item/theme-item.vue';
+import axios from 'axios';
 
 /**
  * 「笑う」ページ
@@ -27,52 +28,15 @@ export default class LaughPageComponent extends Vue {
   private created() {
     // tslint:disable-next-line:no-console
     console.log('created');
-    this.themeItems.push(
-      {
-        id: 1,
-        imageUrl: 'https://cdn.vuetifyjs.com/images/cards/desert.jpg',
-        firstComment: 'こんばんは',
-        funnyScore: 10,
-        unfunnyScore: 3,
-      },
-      {
-        id: 2,
-        imageUrl: 'https://cdn.vuetifyjs.com/images/cards/desert.jpg',
-        firstComment: 'おはよう',
-        funnyScore: 8,
-        unfunnyScore: 3,
-      },
-      {
-        id: 3,
-        imageUrl: 'https://cdn.vuetifyjs.com/images/cards/desert.jpg',
-        firstComment: 'やったあああ',
-        funnyScore: 6,
-        unfunnyScore: 4,
-      },
-      {
-        id: 4,
-        imageUrl: 'https://cdn.vuetifyjs.com/images/cards/desert.jpg',
-        firstComment: 'こんばんは',
-      },
-      {
-        id: 5,
-        imageUrl: 'https://cdn.vuetifyjs.com/images/cards/desert.jpg',
-        firstComment: 'おはよう',
-      },
-      {
-        id: 6,
-        imageUrl: 'https://cdn.vuetifyjs.com/images/cards/desert.jpg',
-        firstComment: 'やったあああ',
-      },
-      {
-        id: 7,
-        imageUrl: 'https://cdn.vuetifyjs.com/images/cards/desert.jpg',
-        firstComment: 'こんばんは',
-      },
-      {
-        id: 8,
-        imageUrl: 'https://cdn.vuetifyjs.com/images/cards/desert.jpg',
-        firstComment: 'おはよう',
+    axios
+    .get<ThemeItem[]>('http://www.mocky.io/v2/5c570d4a4d0000550f0fd013')
+    .then((response) => {
+      this.themeItems = response.data || [];
+    })
+    .catch(
+      (error) => {
+        // tslint:disable-next-line:no-console
+        console.log(error);
       },
     );
   }
