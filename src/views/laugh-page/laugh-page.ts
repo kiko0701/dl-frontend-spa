@@ -25,17 +25,16 @@ export default class LaughPageComponent extends Vue {
    * ライフサイクルフック
    * インスタンス生成時に、お題リストを取得＆更新する
    */
-  private created() {
+  private mounted() {
     // tslint:disable-next-line:no-console
     console.log('created');
     axios
-    .get<ThemeItem[]>('http://www.mocky.io/v2/5c570d4a4d0000550f0fd013')
+    .get<ThemeItem[]>('http://www.mocky.io/v2/5c5713f64d000041100fd01c')
     .then((response) => {
       this.themeItems = response.data || [];
     })
     .catch(
       (error) => {
-        // tslint:disable-next-line:no-console
         console.log(error);
       },
     );
