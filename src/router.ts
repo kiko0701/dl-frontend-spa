@@ -1,11 +1,8 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import LaughPageComponent from './views/laugh/laugh-page.vue';
+import LaughPageComponent from './views/laugh-page/laugh-page.vue';
 
 Vue.use(Router);
-const Foo = {
-  template: '<div>Foo component!</div>',
-};
 
 export default new Router({
   routes: [

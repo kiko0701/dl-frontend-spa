@@ -8,7 +8,7 @@ import { ThemeItem } from './theme-item.interface';
 export default class ThemeItemComponent extends Vue {
 
   /** お題コレクション */
-  @Prop({default: {} as ThemeItem}) private theme!: ThemeItem;
+  @Prop() private themeItem!: ThemeItem;
 
   constructor() {
     super();

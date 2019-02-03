@@ -3,13 +3,13 @@
     <v-flex xs12 sm6 offset-sm3>
       <v-card>
         <v-img
-          src="https://cdn.vuetifyjs.com/images/cards/desert.jpg"
+          :src="themeItem.image_url"
           aspect-ratio="2.75"
         ></v-img>
 
         <v-card-title primary-title>
           <div>
-            <h3 class="headline mb-0">Kangaroo Valley Safari</h3>
+            <h3 class="headline mb-0">{{themeItem && themeItem.first_comment}}</h3>
           </div>
         </v-card-title>
 
