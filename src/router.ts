@@ -1,23 +1,28 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-// import Home from './views/Home.vue';
+import LaughPageComponent from './views/laugh/laugh-page.vue';
 
 Vue.use(Router);
+const Foo = {
+  template: '<div>Foo component!</div>',
+};
 
 export default new Router({
   routes: [
-    // {
-    //   path: '/',
-    //   name: 'home',
-    //   component: Home,
-    // },
-    // {
-    //   path: '/about',
-    //   name: 'about',
-    //   // route level code-splitting
-    //   // this generates a separate chunk (about.[hash].js) for this route
-    //   // which is lazy-loaded when the route is visited.
-    //   component: () => import(/* webpackChunkName: "about" */ './views/About.vue'),
-    // },
+    {
+      path: '/makelaugh',
+      name: 'makelaugh',
+      component: LaughPageComponent,
+    },
+    {
+      path: '/laugh',
+      name: 'laugh',
+      component: LaughPageComponent,
+    },
+    {
+      path: '/ranking',
+      name: 'ranking',
+      component: LaughPageComponent,
+    },
   ],
 });
