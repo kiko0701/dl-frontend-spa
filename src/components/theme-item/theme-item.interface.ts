@@ -10,4 +10,10 @@ export interface ThemeItem {
 
     /** お題の一言 */
     firstComment?: string;
+
+    /** おもろいスコア */
+    funnyScore?: number;
+
+    /** おもろないスコア */
+    unfunnyScore?: number;
 }
