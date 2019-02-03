@@ -32,16 +32,22 @@ export default class LaughPageComponent extends Vue {
         id: 1,
         imageUrl: 'https://cdn.vuetifyjs.com/images/cards/desert.jpg',
         firstComment: 'こんばんは',
+        funnyScore: 10,
+        unfunnyScore: 3,
       },
       {
         id: 2,
         imageUrl: 'https://cdn.vuetifyjs.com/images/cards/desert.jpg',
         firstComment: 'おはよう',
+        funnyScore: 8,
+        unfunnyScore: 3,
       },
       {
         id: 3,
         imageUrl: 'https://cdn.vuetifyjs.com/images/cards/desert.jpg',
         firstComment: 'やったあああ',
+        funnyScore: 6,
+        unfunnyScore: 4,
       },
       {
         id: 4,
