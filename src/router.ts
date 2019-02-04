@@ -24,5 +24,6 @@ const router = new Router({
     },
   ],
 });
+router.replace({ path: '/makelaugh', name: 'makelaugh' });
 // exportしないと読めないぞ
 export default router;
