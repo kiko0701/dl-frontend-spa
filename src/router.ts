@@ -4,7 +4,8 @@ import LaughPageComponent from './views/laugh-page/laugh-page.vue';
 
 Vue.use(Router);
 
-export default new Router({
+const router = new Router({
+  mode: 'history',
   routes: [
     {
       path: '/makelaugh',
@@ -23,3 +24,5 @@ export default new Router({
     },
   ],
 });
+// exportしないと読めないぞ
+export default router;
