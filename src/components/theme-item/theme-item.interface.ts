@@ -2,18 +2,18 @@
  * お題情報の型定義
  */
 export interface ThemeItem {
-    /** リレーションキー */
-    id?: number;
+  /** お題ID(リレーションキー） */
+  id?: number;
 
-    /** お題の画像 */
-    imageUrl?: string;
+  /** お題の画像 */
+  imageUrl?: string;
 
-    /** お題の一言 */
-    firstComment?: string;
+  /** お題の一言 */
+  firstComment?: string;
 
-    /** おもろいスコア */
-    funnyScore?: number;
+  /** おもろいスコア */
+  funnyScore?: number;
 
-    /** おもろないスコア */
-    unfunnyScore?: number;
+  /** おもろないスコア */
+  unfunnyScore?: number;
 }

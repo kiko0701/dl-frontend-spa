@@ -7,7 +7,9 @@ import axios from 'axios';
  * 「笑う」ページ
  */
 @Component({
+  // 使用するコンポーネント一覧
   components: {
+    // お題コンポーネント
     'theme-item': ThemeItemComponent,
   },
 })

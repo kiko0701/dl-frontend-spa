@@ -9,7 +9,8 @@
       style="padding: 15px;">
       <theme-item
       :key="themeItem.id"
-      :themeItem="themeItem"></theme-item>
+      :themeItem="themeItem">
+      </theme-item>
     </v-flex>
   </v-layout>
 </v-container>

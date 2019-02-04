@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import LaughPageComponent from './views/laugh-page/laugh-page.vue';
+import ChatRoomPageComponent from './views/chatroom-page/chatroom-page.vue';
 
 Vue.use(Router);
 
@@ -21,6 +22,11 @@ const router = new Router({
       path: '/ranking',
       name: 'ranking',
       component: LaughPageComponent,
+    },
+    {
+      path: '/chatroom/:themeId',
+      name: 'chatroom',
+      component: ChatRoomPageComponent,
     },
   ],
 });
