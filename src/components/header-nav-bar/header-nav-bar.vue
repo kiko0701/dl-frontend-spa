@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-content
+    <v-content class="header-container"
      v-if="tabsRender">
       <v-toolbar 
         dark 
