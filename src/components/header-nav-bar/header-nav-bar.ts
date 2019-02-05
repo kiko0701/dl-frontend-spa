@@ -1,5 +1,6 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import { HeaderMenu } from './header.interface';
+import { DEFAULT_HEADER_MENU } from '@/consts/default-header-menu.const';
 
 
 /**
@@ -15,29 +16,9 @@ export default class HeaderNavBarComponent extends Vue {
   @Prop({default: true}) private tabsRender!: boolean;
 
   /** ヘッダーに表示するメニュー */
-  @Prop({default: []}) private headerMenuList!: HeaderMenu[];
+  @Prop({default: DEFAULT_HEADER_MENU}) private headerMenuList!: HeaderMenu[];
 
   constructor() {
     super();
-  }
-
-  private mounted() {
-    this.headerMenuList = [
-      {
-        menuTitle: '笑わす',
-        path: '/makelaugh',
-        icon: 'star',
-      },
-      {
-        menuTitle: '笑う',
-        path: '/laugh',
-        icon: 'sentiment_very_satisfied',
-      },
-      {
-        menuTitle: 'ランキング',
-        path: '/ranking',
-        icon: 'favorite',
-      },
-    ];
   }
 }

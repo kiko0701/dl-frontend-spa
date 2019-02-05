@@ -10,7 +10,7 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import HeaderNavBarComponent from './components/header-nav-bar/header-nav-bar';
-import { LARGE_TABLET_SCREEN_WIDTH } from './const/screen-size.const';
+import { LARGE_TABLET_SCREEN_WIDTH } from './consts/screen-size.const';
 
 @Component({
   name: 'App',
