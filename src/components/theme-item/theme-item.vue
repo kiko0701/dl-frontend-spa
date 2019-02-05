@@ -4,21 +4,19 @@
     :to="{name: 'chatroom', params: {themeId: themeItem.id}}"
     slot-scope="{hover}" 
     :class="`elevation-${hover ? 12 : 2}`">
-      <v-card
-      width="350px">
-        <v-img
+      <v-card class="theme-card-width">
+        <v-img class="theme-img-height"
         :src="themeItem.imageUrl"
-        height="200px"
         ></v-img>
         <v-card-title primary-title>
           <div>
-            <h3 class="headline mb-0">{{themeItem && themeItem.firstComment}}</h3>
+            <p class="headline mb-0">{{themeItem && themeItem.firstComment}}</p>
           </div>
         </v-card-title>
-        <!-- <v-card-actions>  
+        <v-card-actions>  
           <v-btn flat color="orange">Share</v-btn>
           <v-btn flat color="orange">Explore</v-btn>
-        </v-card-actions> -->
+        </v-card-actions>
       </v-card>
     </router-link>
   </v-hover>

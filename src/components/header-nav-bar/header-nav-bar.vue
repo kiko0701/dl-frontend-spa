@@ -1,12 +1,9 @@
 <template>
   <div>
-    <v-content class="header-container"
-     v-if="tabsRender">
+    <v-content class="header-container">
       <v-toolbar 
         dark 
-        tabs
-        scroll-off-screen
-        scroll-target="window">
+        tabs>
         <v-toolbar-side-icon></v-toolbar-side-icon>
         <v-toolbar-title>{{title}}</v-toolbar-title>
         <v-spacer></v-spacer>
@@ -21,6 +18,7 @@
       </v-toolbar>
       <!-- TabMenu -->
       <v-tabs class="tab-bar-container"
+        v-if="tabsRender"
         centered 
         dark
         fixed-tabs
