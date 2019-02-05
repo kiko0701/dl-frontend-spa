@@ -1,8 +1,8 @@
 <template>
   <div>
-    <v-content>
+    <v-content
+     v-if="tabsRender">
       <v-toolbar 
-        v-if="tabsRender"
         dark 
         tabs
         scroll-off-screen
