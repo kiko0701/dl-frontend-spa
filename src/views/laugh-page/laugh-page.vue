@@ -1,5 +1,8 @@
 <template>
-<v-container fluid grid-list-sm justify-space-between>
+<v-container class="header-tabs-container"
+  fluid 
+  grid-list-sm 
+  justify-space-between>
   <v-layout  wrap justify-space-around>
     <v-flex 
       v-for="themeItem in themeItems"
