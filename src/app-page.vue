@@ -1,6 +1,16 @@
+<template>
+<div id="app">
+  <header-nav-bar 
+  v-resize="setNowInnerWidth"
+  :tabsRender="isHeaderTabsRender"
+  ></header-nav-bar>
+</div>
+</template>
+
+<script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import HeaderNavBarComponent from './components/header-nav-bar/header-nav-bar';
-import { ScreenSizeConst } from '@/const/screen-size.const';
+import { LARGE_TABLET_SCREEN_WIDTH } from './const/screen-size.const';
 
 @Component({
   name: 'App',
@@ -26,10 +36,13 @@ export default class App extends Vue {
    * window幅取得を取得し、タブレットサイズ以下の場合ヘッダータブを非表示にする
    */
   private setNowInnerWidth(): void {
-    if (window.innerWidth < ScreenSizeConst.LARGE_TABLET_SCREEN_WIDTH) {
+    if (window.innerWidth < LARGE_TABLET_SCREEN_WIDTH) {
       this.isHeaderTabsRender = false;
     } else {
       this.isHeaderTabsRender = true;
     }
   }
 }
+</script>
+<style lang="scss" scoped src="./app-page.scss"></style>
+

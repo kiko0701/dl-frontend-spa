@@ -1,8 +1,6 @@
 
 /**
  * 各スマホ・タブレットのスクリーンの大きさ
+ * ※daclare namespaceしてもimport時にエラー出る。。。
  */
-export declare namespace ScreenSizeConst {
-  /** ipad proのinnerWidth値 */
-  const LARGE_TABLET_SCREEN_WIDTH = 1024;
-}
+export const LARGE_TABLET_SCREEN_WIDTH = 1024;

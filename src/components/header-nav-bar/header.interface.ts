@@ -7,4 +7,7 @@ export interface HeaderMenu {
 
     /** パス */
     path: string;
+
+    /** アイコン画像 */
+    icon: string;
 }

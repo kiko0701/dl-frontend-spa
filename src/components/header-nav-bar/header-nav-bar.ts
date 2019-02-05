@@ -15,9 +15,29 @@ export default class HeaderNavBarComponent extends Vue {
   @Prop({default: true}) private tabsRender!: boolean;
 
   /** ヘッダーに表示するメニュー */
-  @Prop() private headerMenu!: HeaderMenu[];
+  @Prop({default: []}) private headerMenuList!: HeaderMenu[];
 
   constructor() {
     super();
+  }
+
+  private mounted() {
+    this.headerMenuList = [
+      {
+        menuTitle: '笑わす',
+        path: '/makelaugh',
+        icon: 'star',
+      },
+      {
+        menuTitle: '笑う',
+        path: '/laugh',
+        icon: 'sentiment_very_satisfied',
+      },
+      {
+        menuTitle: 'ランキング',
+        path: '/ranking',
+        icon: 'favorite',
+      },
+    ];
   }
 }
