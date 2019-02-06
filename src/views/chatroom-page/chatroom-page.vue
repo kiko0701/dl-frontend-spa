@@ -11,7 +11,12 @@
         <div class="balloon">左からのコメント</div>
       </div>
     </v-layout>
-    <chat-form></chat-form>
+    <v-layout style="margin-top: 25px;"
+    row
+    fill-height
+    align-end>
+      <chat-form></chat-form>
+    </v-layout>
   </v-container>
 </template>
 <script lang="ts" src="./chatroom-page.ts"></script>

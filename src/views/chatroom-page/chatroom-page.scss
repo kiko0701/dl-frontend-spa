@@ -6,21 +6,22 @@ html, body, div#app {
 
 .chat-container {
   width: 80vw; 
-  height: 85vh;
+  height: 75vh;
   background-color: $dark-012;
   z-index: -100;
 }
 @media only screen and (max-width: 1024px) {
   .chat-container {
     width: 90vw; 
-    height: 85vh;
+    height: 75vh;
     background-color: $dark-012;
     z-index: -100;
   }
 }
+
 .chat-message-container {
   display:flex; 
   min-width:100%; 
-  background-color: $light-012; 
+  background-color: $light-070; 
   z-index: -10
 }

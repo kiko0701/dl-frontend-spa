@@ -3,7 +3,7 @@
     row
     align-end>
     <div>
-      <div style="width: 100%; margin-left: 10px;">{{alertMessage}}</div>
+      <div class="alert-container">{{alertMessage}}</div>
       <div class="cp_iptxt">
         <input class="effect" type="text" placeholder="チャット">
         <span class="focus_bg"></span>
