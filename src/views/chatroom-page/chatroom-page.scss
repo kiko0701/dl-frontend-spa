@@ -1,10 +1,26 @@
-input.chat-input {
-  min-width: 80%;
-  min-height: 40px;
-  padding: 0.5em;
-  font: 15px sans-serif;
-  border-width: 2px !important;
-  border-color: rgb(211, 211, 211) !important;
-  border-collapse: collapse !important;
-  border-radius: 20px !important;
+@import "../../app-page";
+
+html, body, div#app {
+  overflow-y: hidden;
+}
+
+.chat-container {
+  width: 80vw; 
+  height: 85vh;
+  background-color: $dark-012;
+  z-index: -100;
+}
+@media only screen and (max-width: 1024px) {
+  .chat-container {
+    width: 90vw; 
+    height: 85vh;
+    background-color: $dark-012;
+    z-index: -100;
+  }
+}
+.chat-message-container {
+  display:flex; 
+  min-width:100%; 
+  background-color: $light-012; 
+  z-index: -10
 }

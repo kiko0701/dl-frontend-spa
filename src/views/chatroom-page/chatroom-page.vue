@@ -1,10 +1,17 @@
 <template>
-  <v-container style=" width: 80vw; height: 100vh;">
-    <div style="min-width:100%; background-color: white;">
-      <div>
-        <input type="text" placeholder="チャット" class="chat-input">
+  <v-container class="chat-container">
+    <v-layout class="chat-message-container"
+    row
+    align-start
+    >
+      <div class="balloon-set-box left">
+        <div class="icon-box">
+          <img src="image.jpg" width="40" height="40" class="icon">
+        </div>
+        <div class="balloon">左からのコメント</div>
       </div>
-    </div>
+    </v-layout>
+    <chat-form></chat-form>
   </v-container>
 </template>
 <script lang="ts" src="./chatroom-page.ts"></script>
