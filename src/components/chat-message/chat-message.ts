@@ -18,6 +18,7 @@ export default class ChatMessageComponent extends Vue {
   }
 
   private mounted() {
+    // 例：ボケが自分の場合
     if (this.chatMessage && this.chatMessage.act === 'boke') {
       this.isOther = false;
     }

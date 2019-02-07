@@ -1,3 +1,7 @@
+div {
+  font-size: 16px;
+}
+
 .balloon-set-box {
   display: flex;
   flex-wrap: wrap;
@@ -11,7 +15,7 @@
 .balloon {
   position: relative; /* 三角の位置を固定するために設定 */
   display: inline-block;
-  max-width: 300px;
+  max-width: 80%;
   margin: 10px 20px 20px; /* 上 左右 下のマージン */
   padding: 8px 15px; /* ふきだし内の余白 */
   background: #f0f0f0; /* 背景色 */
