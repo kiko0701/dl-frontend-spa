@@ -8,7 +8,7 @@ export interface ChatMessage {
 
   /** 役割 */
   act: string;
-  
+
   /** アクションフラグ */
   action?: boolean;
 
