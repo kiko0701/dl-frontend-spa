@@ -12,7 +12,8 @@
       style="padding: 15px;">
       <theme-item
       :key="themeItem.id"
-      :themeItem="themeItem">
+      :themeItem="themeItem"
+      :footerMenuType="footerMenuType">
       </theme-item>
     </v-flex>
   </v-layout>

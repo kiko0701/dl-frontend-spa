@@ -3,13 +3,23 @@
 html, body, div#app {
   overflow-y: hidden;
 }
-
+.screen-container {
+  max-width: 50vw; 
+}
 .chat-container {
   max-width: 50vw; 
   max-height: 75vh;
   background-color: $dark-012;
   z-index: -100;
   overflow-y: auto;
+}
+.chat-message-container {
+  display:flex; 
+  flex-flow: column;
+  min-width: 100%; 
+  min-height: 100%;
+  background-color: $light-100; 
+  z-index: -10
 }
 @media only screen and (max-width: 1024px) {
   .chat-container {
@@ -19,13 +29,7 @@ html, body, div#app {
     z-index: -100;
     overflow-y: auto;
   }
-}
-
-.chat-message-container {
-  display:flex; 
-  flex-flow: column;
-  min-width: 100%; 
-  min-height: 100%;
-  background-color: $light-100; 
-  z-index: -10
+  .screen-container {
+    max-width: 100vw; 
+  }
 }

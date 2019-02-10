@@ -1,7 +1,8 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import LaughPageComponent from './views/laugh-page/laugh-page.vue';
-import ChatRoomPageComponent from './views/chatroom-page/chatroom-page.vue';
+import LaughPageComponent from '@/views/laugh-page/laugh-page.vue';
+import ChatRoomPageComponent from '@/views/chatroom-page/chatroom-page.vue';
+import RankingPageComponent from '@/views/ranking-page/ranking-page.vue';
 
 Vue.use(Router);
 
@@ -21,7 +22,7 @@ const router = new Router({
     {
       path: '/ranking',
       name: 'ranking',
-      component: LaughPageComponent,
+      component: RankingPageComponent,
     },
     {
       path: '/chatroom/:themeId',

@@ -7,16 +7,19 @@
       <v-card class="theme-card-width">
         <v-img class="theme-img-height"
         :src="themeItem.imageUrl"
-        ></v-img>
-        <v-card-title primary-title>
-          <div>
-            <p class="headline mb-0">{{themeItem && themeItem.firstComment}}</p>
+        >
+        </v-img>
+        <v-card-title 
+        primary-title
+        v-if="footerMenuType === '0'">
+          <div style="display: flex; width: 100%;">
+            <p class="headline mb-0" style="padding-top: 10px;">{{themeItem && themeItem.firstComment}}</p>
+            <v-spacer></v-spacer>
+            <v-card-actions>  
+              <v-btn color="orange">ネタ作りにいく</v-btn>
+            </v-card-actions>
           </div>
         </v-card-title>
-        <v-card-actions>  
-          <v-btn flat color="orange">Share</v-btn>
-          <v-btn flat color="orange">Explore</v-btn>
-        </v-card-actions>
       </v-card>
     </router-link>
   </v-hover>

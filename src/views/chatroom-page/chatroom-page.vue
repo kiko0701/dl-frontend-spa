@@ -1,5 +1,5 @@
 <template>
-<v-container>
+<v-container class="screen-container">
   <v-container class="chat-container">
     <!-- chat!! -->
     <v-layout class="chat-message-container">

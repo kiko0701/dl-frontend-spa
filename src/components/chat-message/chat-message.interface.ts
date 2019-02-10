@@ -13,5 +13,5 @@ export interface ChatMessage {
   action?: boolean;
 
   /** アイコンのURL（いらなさそう） */
-  iconURL: string;
+  iconURL?: string;
 }
