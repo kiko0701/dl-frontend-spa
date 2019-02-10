@@ -5,17 +5,19 @@ html, body, div#app {
 }
 
 .chat-container {
-  width: 50vw; 
-  height: 75vh;
+  max-width: 50vw; 
+  max-height: 75vh;
   background-color: $dark-012;
   z-index: -100;
+  overflow-y: auto;
 }
 @media only screen and (max-width: 1024px) {
   .chat-container {
-    width: 90vw; 
-    height: 75vh;
+    max-width: 90vw; 
+    max-height: 75vh;
     background-color: $dark-012;
     z-index: -100;
+    overflow-y: auto;
   }
 }
 
@@ -24,6 +26,6 @@ html, body, div#app {
   flex-flow: column;
   min-width: 100%; 
   min-height: 100%;
-  background-color: $light-070; 
+  background-color: $light-100; 
   z-index: -10
 }

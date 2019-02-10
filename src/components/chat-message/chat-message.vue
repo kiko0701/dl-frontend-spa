@@ -5,7 +5,13 @@
       <v-img width="40" height="40" class="icon"
       :src="chatMessage.iconURL"></v-img>
     </div>
-    <div class="balloon">{{chatMessage.content}}</div>
+    <div class="balloon"
+    :class="{
+      boke: chatMessage.action && chatMessage.act === 'boke', 
+      tukkomi: chatMessage.action && chatMessage.act === 'tukkomi'
+    }">
+    {{chatMessage.content}}
+    </div>
   </div>
 </template>
 <!-- file import -->

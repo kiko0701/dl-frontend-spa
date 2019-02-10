@@ -1,5 +1,6 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import { ThemeItem } from '@/components/theme-item/theme-item.interface';
+import { THEME_ITEMS_EXAMPLE } from '@/consts/theme-items-example.const';
 import ThemeItemComponent from '@/components/theme-item/theme-item.vue';
 import axios from 'axios';
 
@@ -35,6 +36,10 @@ export default class LaughPageComponent extends Vue {
       this.themeItems = response.data || [];
     })
     // エラー処理
-    .catch();
+    .catch(
+      () => {
+        this.themeItems = THEME_ITEMS_EXAMPLE;
+      },
+    );
   }
 }
