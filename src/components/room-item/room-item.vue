@@ -1,10 +1,8 @@
 <template>
-  <v-hover>
-    <router-link 
+    <router-link class="theme-card-width"
     :to="{name: 'chatroom', params: {themeId: roomItem.theme.id}}"
-    slot-scope="{hover}" 
-    :class="`elevation-${hover ? 12 : 2}`">
-      <v-card class="theme-card-width">
+    >
+      <v-card>
         <v-img class="theme-img-height"
         :src="roomItem.theme.imageUrl"
         >
@@ -12,27 +10,30 @@
           xs12
           fill-height
           column>
-            <v-flex xs12 align-start flexbox>
-              <v-avatar color="indigo">
-                <v-icon dark>account_circle</v-icon>
+            <v-flex xs12 align-start flexbox
+            v-show="isShowRanking">
+              <v-avatar 
+              :class="rankingColor">
+                <span class="headline">{{ranking}}</span>
               </v-avatar>
             </v-flex>
             <v-flex
+            v-show="isShowScore"
             flexbox
             align-end
             justify-start>
             <v-badge overlap style="margin: 5px;">
               <span slot="badge">{{roomItem.funnyScore}}</span>
               <v-avatar
-              color="purple">
+              color="red">
                 <v-icon dark>sentiment_very_satisfied</v-icon>
               </v-avatar>
             </v-badge>
             <v-badge overlap style="margin: 5px;">
               <span slot="badge">{{roomItem.unfunnyScore}}</span>
               <v-avatar
-              color="purple">
-                <v-icon dark>sentiment_very_satisfied</v-icon>
+              color="blue">
+                <v-icon dark>sentiment_very_dissatisfied</v-icon>
               </v-avatar>
             </v-badge>
             </v-flex>
@@ -50,7 +51,6 @@
         </v-card-actions>
       </v-card>
     </router-link>
-  </v-hover>
 </template>
 <!--file import-->
 <style lang="scss" scoped src="./room-item.scss"></style>

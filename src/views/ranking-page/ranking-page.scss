@@ -1,8 +1,21 @@
+
+h1 {
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: normal;
+}
 div.ranking-container {
   display: flex; 
-  padding: 15px;
-  max-width: 45vw;
+  margin: 15px;  
 }
 .theme-img-height {
   height: 25vh;
+}
+.top-ranking-container {
+  max-width: 40vw; 
+  background-color: rgba($color: #EF5350, $alpha: 0.8);
+}
+
+.worst-ranking-container {
+  max-width: 40vw; 
+  background-color: rgba($color: black, $alpha: 0.5);
 }

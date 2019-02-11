@@ -8,7 +8,31 @@ div.v-card {
   height: 25vh;
 }
 .theme-card-width {
-  width: 350px;
+  width: 85%;
+}
+.top {
+  background: #D9B340;
+  span {
+    color: #fff;
+  }
+}
+.second {
+  background: #6F7B83;
+  span {
+    color: #fff;
+  }
+}
+.third {
+  background: #A15326;
+  span {
+    color: #fff;
+  }
+}
+.others {
+  background: #fff;
+  span {
+    color: #8C8C8C;
+  }
 }
 @media only screen and (max-width: 1024px) {
   .theme-card-width {
