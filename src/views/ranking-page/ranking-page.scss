@@ -1,4 +1,9 @@
 
+.ranking-page-container {
+  display: flex;
+  max-height: 100%; //具体的な数値にする
+  overflow-y: auto;
+}
 h1 {
   font-family: 'Roboto', sans-serif !important;
   font-weight: normal;

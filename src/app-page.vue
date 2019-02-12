@@ -29,19 +29,19 @@ export default class App extends Vue {
 
   /** ライフサイクルフック */
   private mounted() {
-    this.setNowInnerWidth();
+    // this.setNowInnerWidth();
   }
 
   /**
    * window幅取得を取得し、タブレットサイズ以下の場合ヘッダータブを非表示にする
    */
-  private setNowInnerWidth(): void {
-    if (window.innerWidth < LARGE_TABLET_SCREEN_WIDTH) {
-      this.isHeaderTabsRender = false;
-    } else {
-      this.isHeaderTabsRender = true;
-    }
-  }
+  // private setNowInnerWidth(): void {
+  //   if (window.innerWidth < LARGE_TABLET_SCREEN_WIDTH) {
+  //     this.isHeaderTabsRender = false;
+  //   } else {
+  //     this.isHeaderTabsRender = true;
+  //   }
+  // }
 }
 </script>
 <style lang="scss" src="./app-page.scss"></style>

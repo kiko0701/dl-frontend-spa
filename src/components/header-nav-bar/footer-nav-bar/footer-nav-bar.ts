@@ -1,19 +1,13 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
-import { NavBarMenu } from './nav-bar-menu.interface';
+import { NavBarMenu } from '@/components/header-nav-bar/nav-bar-menu.interface';
 import { DEFAULT_NAV_BAR_MENU } from '@/consts/default-header-menu.const';
 
 
 /**
- * ヘッダーナビゲーションバーコンポーネント
+ * フッターナビゲーションバーコンポーネント
  */
 @Component
-export default class HeaderNavBarComponent extends Vue {
-
-  /** タイトル */
-  @Prop({default: 'waraishini'}) private title!: string;
-
-  /** タブメニュー表示切り替え用 */
-  @Prop({default: true}) private tabsRender!: boolean;
+export default class FooterNavBarComponent extends Vue {
 
   /** ヘッダーに表示するメニュー */
   @Prop(

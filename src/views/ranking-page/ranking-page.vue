@@ -1,5 +1,5 @@
 <template>
-  <v-container style="display: flex;">
+  <v-container class="ranking-page-container">
     <v-layout column justify-space-around>
       <h1 class="top-ranking-title">トップランキング</h1>
       <div class="top-ranking-container">

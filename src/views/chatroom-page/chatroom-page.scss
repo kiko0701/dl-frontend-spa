@@ -1,7 +1,7 @@
 @import "../../app-page";
 
-html, body, div#app {
-  overflow-y: hidden;
+html,body {
+  overflow: hidden;
 }
 .screen-container {
   max-width: 50vw; 

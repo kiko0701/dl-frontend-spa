@@ -1,9 +1,9 @@
-import { HeaderMenu } from '@/components/header-nav-bar/header.interface';
+import { NavBarMenu } from '@/components/header-nav-bar/nav-bar-menu.interface';
 
 /**
- * デフォルトのヘッダーメニュー定義
+ * デフォルトのナビゲーションメニュー定義
  */
-export const DEFAULT_HEADER_MENU: HeaderMenu[] = [
+export const DEFAULT_NAV_BAR_MENU: NavBarMenu[] = [
   {
     menuTitle: '笑わす',
     path: '/makelaugh',
