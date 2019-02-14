@@ -6,7 +6,8 @@
       <chat-message
       v-for="chatMessage in chatMessages"
       :key="chatMessage.count"
-      :chatMessage="chatMessage"></chat-message>
+      :chatMessage="chatMessage"
+      :isLaugh="false"></chat-message>
     </v-layout>
     </v-container>
      <!-- chat end. -->

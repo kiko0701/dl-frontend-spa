@@ -1,7 +1,8 @@
 <template>
   <div class="balloon-set-box"
-  :class="{ left: isOther, right: !isOther }">
-    <div class="icon-box">
+  :class="{ other: isOther, 'not-other': !isOther }">
+    <div class="icon-box"
+    v-show="isOther && !isLaugh">
       <v-img width="40" height="40" class="icon"
       :src="chatMessage.iconURL"></v-img>
     </div>
