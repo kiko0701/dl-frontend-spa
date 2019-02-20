@@ -8,6 +8,13 @@ $light-070: rgba(255,255,255,0.70);
 $light-030: rgba(255,255,255,0.30);
 $light-012: rgba(255,255,255,0.12);
 
-html,body {
-  overflow: hidden;
+$footer-height: 60px;
+
+body{ 
+  margin:0; 
+  padding:0; 
+}
+// footer分marginを取る
+div#app {
+  max-height: calc(100vh - 60px);
 }

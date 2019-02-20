@@ -10,8 +10,8 @@ export default class ChatMessageComponent extends Vue {
   /** メッセージ */
   @Prop() private chatMessage!: ChatMessage;
 
-   /** 観戦モードかどうか（右側にアイコン表示するかどうか） */
-   @Prop({default: false}) private isLaugh!: boolean;
+  /** 観戦モードかどうか（右側にアイコン表示するかどうか） */
+  @Prop({default: false}) private isLaugh!: boolean;
 
   /** 発言者が自分かどうかを司るフラグ */
   private isOther: boolean = true;

@@ -1,8 +1,8 @@
 <template>
-<v-layout class="footer-container">
   <v-bottom-nav
-      color="white"
-    >
+  class="footer-container"
+  absolute
+  dark>
       <v-btn
         color="teal"
         flat
@@ -30,7 +30,6 @@
         <v-icon>place</v-icon>
     </v-btn>
   </v-bottom-nav>
-</v-layout>
 </template>
 <!-- file import -->
 <script lang="ts" src="./footer-nav-bar.ts"></script>
