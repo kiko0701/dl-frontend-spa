@@ -3,7 +3,9 @@
   fluid 
   grid-list-sm 
   justify-space-between>
-  <v-layout  wrap justify-space-around>
+  <v-layout 
+  wrap 
+  justify-space-around>
     <v-flex 
       v-for="themeItem in themeItems"
       :key="themeItem.id"
