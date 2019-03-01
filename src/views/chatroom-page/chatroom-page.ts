@@ -23,4 +23,19 @@ export default class ChatRoomPageComponent extends Vue {
     this.chatMessages = CHAT_MESSAGE_EXAMPLE;
   }
 
+  private addChatMessage(content: string) {
+    // tslint:disable-next-line:no-console
+    console.log(content);
+    const addChatMsg: ChatMessage = {} as ChatMessage;
+    if (content) {
+      addChatMsg.count = this.chatMessages.length + 1;
+      addChatMsg.content = content;
+      addChatMsg.act = 'boke';
+      addChatMsg.action = false;
+      addChatMsg.iconURL = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1141818/profile/profile-80.jpg';
+      this.chatMessages.push(addChatMsg);
+    }
+    // tslint:disable-next-line:no-console
+    console.log(this.chatMessages);
+  }
 }

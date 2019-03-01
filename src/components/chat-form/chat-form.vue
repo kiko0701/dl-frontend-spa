@@ -5,11 +5,13 @@
     <div>
       <div class="alert-container">{{alertMessage}}</div>
       <div class="cp_iptxt">
-        <input class="effect" type="text" placeholder="チャット">
+        <input class="effect" type="text" placeholder="チャット"
+        v-model="chatMsg">
         <span class="focus_bg"></span>
       </div>
     </div>
-    <v-btn flat icon color="green" class="send-btn">
+    <v-btn flat icon color="green" class="send-btn"
+    @click.prevent="changeChatMsg">
       <v-icon>send</v-icon>
     </v-btn>
   </v-layout>
