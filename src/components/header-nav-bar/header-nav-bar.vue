@@ -34,7 +34,7 @@
     </v-content>
     <router-view></router-view>
     <footer-nav-bar
-    v-show="!tabsRender"
+    v-if="!tabsRender"
     :menuList="headerMenuList"></footer-nav-bar>
   </div>
 </template>
