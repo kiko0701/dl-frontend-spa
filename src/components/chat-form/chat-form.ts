@@ -1,7 +1,7 @@
 import { Component, Vue, Emit } from 'vue-property-decorator';
 
 /**
- * ヘッダーナビゲーションバーコンポーネント
+ * チャットフォームコンポーネント
  */
 @Component
 export default class ChatFormComponent extends Vue {
@@ -15,8 +15,8 @@ export default class ChatFormComponent extends Vue {
   }
 
   @Emit('send')
-  private onChangeChatMsg(newValue: string) {
-    return newValue;
+  private onChangeChatMsg(chatMsg: string) {
+    return chatMsg;
   }
 
   private changeChatMsg() {
