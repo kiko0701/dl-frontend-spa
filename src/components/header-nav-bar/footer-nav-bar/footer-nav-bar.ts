@@ -15,7 +15,7 @@ export default class FooterNavBarComponent extends Vue {
       type: Array,
       default: () => DEFAULT_NAV_BAR_MENU,
     },
-  ) private menuList!: NavBarMenu[];
+  ) private footerMenuList!: NavBarMenu[];
 
   constructor() {
     super();

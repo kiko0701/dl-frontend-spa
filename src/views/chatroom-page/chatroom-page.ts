@@ -12,7 +12,6 @@ import io from 'socket.io-client';
   },
 })
 export default class ChatRoomPageComponent extends Vue {
-
   private chatMessages: ChatMessage[] = [];
 
   private sendChatMessage!: ChatMessage;
@@ -32,16 +31,25 @@ export default class ChatRoomPageComponent extends Vue {
    */
   private mounted() {
     this.chatMessages = CHAT_MESSAGE_EXAMPLE;
-    // 投稿されたデータの取得
-    this.socket.on('MESSAGE', (data: ChatMessage) => {
+    this.socket.on('GET_CHATMESSAGE', (data: ChatMessage) => {
       this.chatMessages = [...this.chatMessages, data];
     });
   }
 
-  // チャットメッセージ送信
-  private sendMessage(e: any) {
-    e.preventDefault();
-    this.socket.emit('POST_MESSAGE', this.sendChatMessage);
-    this.sendChatMessage = {} as ChatMessage;
+  private addChatMessage(message: string) {
+    const addChatMsg: ChatMessage = {} as ChatMessage;
+    if (message) {
+      // addChatMsg.count = this.chatMessages.length + 1;
+      // addChatMsg.action = false;
+      addChatMsg.content = message;
+      addChatMsg.act = 'boke';
+      addChatMsg.iconURL =
+        'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1141818/profile/profile-80.jpg';
+      this.socket.emit('POST_CHATMESSAGE', addChatMsg);
+      // this.chatMessages.push(addChatMsg);
+      this.$nextTick(() => {
+        scrollTo({ top: screen.height });
+      });
+    }
   }
 }

@@ -15,7 +15,7 @@ import FooterNavBarComponent from '@/components/header-nav-bar/footer-nav-bar/fo
 export default class HeaderNavBarComponent extends Vue {
 
   /** タイトル */
-  @Prop({default: 'waraishini'}) private title!: string;
+  @Prop({default: 'title'}) private title!: string;
 
   /** タブメニュー表示切り替え用 */
   @Prop({default: true}) private tabsRender!: boolean;

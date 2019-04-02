@@ -9,13 +9,16 @@ import ThemeItemComponent from './theme-item/theme-item';
 @Component
 export default class RoomItemComponent extends ThemeItemComponent {
 
-  /** お題コレクション */
+  /** ルーム */
   @Prop() private roomItem!: RoomItem;
 
+  /** 順位を表示するかどうか */
   @Prop({default: false}) private isShowRanking!: boolean;
 
+  /** 順位 */
   @Prop({default: 1}) private ranking!: number;
 
+  /** スコアを表示するかどうか */
   @Prop({default: false}) private isShowScore!: boolean;
 
 
@@ -23,6 +26,9 @@ export default class RoomItemComponent extends ThemeItemComponent {
     super();
   }
 
+  /**
+   * TODO: 戻り値を定数化すること
+   */
   @Watch('ranking')
   private get rankingColor() {
     switch (this.ranking) {
@@ -34,7 +40,6 @@ export default class RoomItemComponent extends ThemeItemComponent {
 
       case 3:
         return 'third';
-
 
       default:
         return 'others';

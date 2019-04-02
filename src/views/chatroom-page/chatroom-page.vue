@@ -14,7 +14,8 @@
   <v-layout style="margin-top: 50px;"
   row
   align-end>
-    <chat-form></chat-form>
+    <chat-form
+    @send="addChatMessage"></chat-form>
   </v-layout>
 </v-container>
 </template>

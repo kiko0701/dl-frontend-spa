@@ -1,5 +1,5 @@
-import { Component, Prop, Vue } from 'vue-property-decorator';
-import { ThemeItem, ThemeItemFooterMenuType } from '@/components/room-item/theme-item/theme-item.interface';
+import { Component, Vue } from 'vue-property-decorator';
+import { ThemeItem } from '@/components/room-item/theme-item/theme-item.interface';
 import { THEME_ITEMS_EXAMPLE } from '@/consts/theme-items-example.const';
 import { THEMEITEM_FOOTERMENU_TYPE } from '@/consts/theme-item.const';
 import ThemeItemComponent from '@/components/room-item/theme-item/theme-item.vue';
