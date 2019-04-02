@@ -63,14 +63,14 @@ input[type='text'], .focus_bg {
       transition: 0.4s;
       background-color: transparent;
     }
-    &:focus {
-      border: 1px solid #da3c41;
-    }
-    &:focus ~ .focus_bg {
-      width: 100%;
-      transition: 0.4s;
-      background-color: rgba(218,60,65,.3);
-    }
+    // &:focus {
+    //   border: 1px solid #da3c41;
+    // }
+    // &:focus ~ .focus_bg {
+    //   width: 100%;
+    //   transition: 0.4s;
+    //   background-color: rgba(218,60,65,.3);
+    // }
     ~ label {
       position: absolute;
       z-index: -1;

@@ -1,7 +1,7 @@
 <template>
 <v-container class="screen-container">
+  <!-- chat!! -->
   <v-container class="chat-container">
-    <!-- chat!! -->
     <v-layout class="chat-message-container">
       <chat-message
       v-for="chatMessage in chatMessages"
@@ -11,7 +11,7 @@
     </v-layout>
   </v-container>
   <!-- chat end. -->
-  <v-layout style="margin-top: 40px;"
+  <v-layout style="margin-top: 50px;"
   row
   align-end>
     <chat-form></chat-form>

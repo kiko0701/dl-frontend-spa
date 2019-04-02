@@ -5,7 +5,9 @@
     <div>
       <div class="alert-container">{{alertMessage}}</div>
       <div class="cp_iptxt">
-        <input class="effect" type="text" placeholder="チャット">
+        <input class="effect" type="text" placeholder="チャット"
+        v-model="chatMessage.content"
+        @keyup.enter="keypress">
         <span class="focus_bg"></span>
       </div>
     </div>
