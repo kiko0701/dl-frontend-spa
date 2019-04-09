@@ -46,7 +46,7 @@
           </div>
         </v-card-title>
         <v-card-actions style="display:flex; justify-content: space-between;">  
-          <v-btn color="orange">ネタ作りにいく</v-btn>
+          <v-btn color="orange" class="btn-opacity">ネタ作りにいく</v-btn>
           <v-btn color="blue" style="float: right">ネタを見に行く</v-btn>
         </v-card-actions>
       </v-card>
