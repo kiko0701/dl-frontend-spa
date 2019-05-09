@@ -9,14 +9,3 @@ $light-030: rgba(255, 255, 255, 0.3);
 $light-012: rgba(255, 255, 255, 0.12);
 
 $footer-height: 60px;
-
-html,
-body {
-  overflow: hidden;
-}
-// footer分marginを取る
-@media only screen and (max-width: 1024px) {
-  div#app {
-    max-height: calc(100vh - 60px);
-  }
-}

@@ -16,26 +16,7 @@
           <v-icon>more_vert</v-icon>
         </v-btn>
       </v-toolbar>
-      <!-- TabMenu -->
-      <v-tabs class="tab-bar-container"
-        v-if="tabsRender"
-        centered 
-        dark
-        fixed-tabs
-        slider-color="yellow" 
-        grow>
-        <v-tab
-          v-for="(headerMenu, i) in headerMenuList"
-          :key="i"
-          :to="headerMenu.path">{{headerMenu.menuTitle}}
-          <v-icon class="v-icon-config">{{headerMenu.icon}}</v-icon>
-        </v-tab>
-      </v-tabs>
     </v-content>
-    <router-view></router-view>
-    <footer-nav-bar
-    v-if="!tabsRender"
-    :menuList="headerMenuList"></footer-nav-bar>
   </div>
 </template>
 <!-- file import -->

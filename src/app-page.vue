@@ -4,20 +4,21 @@
   v-resize="setNowInnerWidth"
   :tabsRender="isHeaderTabsRender"
   ></header-nav-bar>
+  <laugh-page></laugh-page>
 </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import HeaderNavBarComponent from './components/header-nav-bar/header-nav-bar';
-import FooterNavBarComponent from './components/header-nav-bar/footer-nav-bar/footer-nav-bar';
+import LaughPageComponent from './views/laugh-page/laugh-page';
 import { LARGE_TABLET_SCREEN_WIDTH } from './consts/screen-size.const';
 
 @Component({
   name: 'App',
   components: {
     'header-nav-bar': HeaderNavBarComponent,
-    'footer-nav-bar': FooterNavBarComponent,
+    'laugh-page': LaughPageComponent,
   },
 })
 export default class App extends Vue {

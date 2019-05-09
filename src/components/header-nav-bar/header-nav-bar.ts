@@ -7,11 +7,7 @@ import FooterNavBarComponent from '@/components/header-nav-bar/footer-nav-bar/fo
 /**
  * ヘッダーナビゲーションバーコンポーネント
  */
-@Component({
-  components: {
-    'footer-nav-bar': FooterNavBarComponent,
-  },
-})
+@Component({})
 export default class HeaderNavBarComponent extends Vue {
 
   /** タイトル */
